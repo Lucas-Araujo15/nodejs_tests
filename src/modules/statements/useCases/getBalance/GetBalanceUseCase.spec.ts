@@ -33,8 +33,6 @@ describe("Get Balance", () => {
       password: "123456",
     });
 
-    console.log(user.id);
-
     await createStatementUseCase.execute({
       user_id: user.id,
       type: "deposit" as OperationType,
