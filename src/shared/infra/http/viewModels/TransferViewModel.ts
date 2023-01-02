@@ -1,15 +1,15 @@
 import { Statement } from "../../../../modules/statements/entities/Statement";
 
 export class TransferViewModel {
-  static toHTTP(transfer: Statement) {
+  static toHTTP(statement: Statement) {
     return {
-      id: transfer.id,
-      sender_id: transfer.user_id,
-      amount: transfer.amount,
-      description: transfer.description,
-      type: "teste",
-      created_at: transfer.created_at,
-      updated_at: transfer.updated_at,
+      id: statement.id,
+      sender_id: statement.user_id,
+      amount: statement.amount,
+      description: statement.description,
+      type: statement.type,
+      created_at: statement.created_at,
+      updated_at: statement.updated_at,
     };
   }
 }

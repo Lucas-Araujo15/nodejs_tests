@@ -45,7 +45,7 @@ class ValueTransferUseCase {
     await this.statementsRepository.create({
       amount,
       description,
-      user_id: receiver_id,
+      user_id: sender_id,
       type: "deposit" as OperationType,
     });
 
